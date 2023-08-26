@@ -1,0 +1,11 @@
+{
+  "name": "lyricskeeper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PseudoMon/lyricskeeper.git",
+  "author": "PseudoMon <aliya.nisa@yahoo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
