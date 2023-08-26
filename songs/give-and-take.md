@@ -17,7 +17,8 @@ Revolution's on its way
 Hold the line
 This is how we'll be defined
 (Just stand your ground)
-Give and take only works when both sides really give and take
+Give and take only works when both sides 
+really give and take
 The revolution's on its way
 
 (Look around, what do you know?)
@@ -29,7 +30,7 @@ They're comin' now, yeah they're right outside the door
 
 They tried to hold us down
 (Tried to hold us down)
-But they can't control us now
+They can't control us now
 (Can't control us oooh)
 
 Today's the day
@@ -38,7 +39,8 @@ Revolution's on its way
 Hold the line
 This is how we'll be defined
 (Just stand your ground)
-Give and take only works when both sides really give and take
+Give and take only works when both sides 
+really give and take
 The revolution's on its way
 
 (Look around, what do you know?)

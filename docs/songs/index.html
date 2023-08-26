@@ -8,54 +8,71 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/lyricskeeper/styles.css">
 
-<style>
-  .songdir {
-    text-align: center;
-  }
+<script>
+  var SONGS = [{ 
+      title: "Passerine",
+      artist: "The Oh Hellos",
+      artists: ["The Oh Hellos",],
+      url: "/songs/passerine/"
+    },{ 
+      title: "Hunter's Song",
+      artist: "Adam Gubman",
+      artists: ["Adam Gubman",],
+      url: "/songs/hunters-song/"
+    },{ 
+      title: "Give and Take",
+      artist: "Poor Man's Poison",
+      artists: ["Poor Man's Poison",],
+      url: "/songs/give-and-take/"
+    },{ 
+      title: "Operation Blade",
+      artist: "Obadiah Brown-Beach & Xueran Chen",
+      artists: ["Obadiah Brown-Beach","Xueran Chen",],
+      url: "/songs/operation-blade/"
+    },{ 
+      title: "Magic Theorem",
+      artist: "Adam Gubman & Sarah Kang",
+      artists: ["Adam Gubman","Sarah Kang",],
+      url: "/songs/magic-theorem/"
+    },{ 
+      title: "Tombi",
+      artist: "Kvi Baba",
+      artists: ["Kvi Baba",],
+      url: "/songs/tombi/"
+    },{ 
+      title: "Bluish Light",
+      artist: "Matthew Carl Earl & Xueran Chen",
+      artists: ["Matthew Carl Earl","Xueran Chen",],
+      url: "/songs/bluish-light/"
+    },{ 
+      title: "Undertopia",
+      artist: "Adam Gubman & Moonlist",
+      artists: ["Adam Gubman","Moonlist",],
+      url: "/songs/undertopia/"
+    },{ 
+      title: "Ensheath",
+      artist: "David Lin & Robert Wolf & Obadiah Brown-Beach",
+      artists: ["David Lin","Robert Wolf","Obadiah Brown-Beach",],
+      url: "/songs/ensheath/"
+    },{ 
+      title: "Never to Return",
+      artist: "Darren Korb",
+      artists: ["Darren Korb",],
+      url: "/songs/nevertoreturn/"
+    },{ 
+      title: "Mother, I'm Here (Zulf's Theme)",
+      artist: "Darren Korb",
+      artists: ["Darren Korb",],
+      url: "/songs/motherimhere/"
+    },
+  ]
 
-  ol.songs {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  ol.songs li {
-    display: flex;
-  }
-
-  table.songs {
-    max-width: 800px;
-    width: 90%;
-    border-collapse: separate;
-    border-spacing: 0 8px;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  table.songs th {
-    font-weight: 400;
-  }
-
-  table.songs td, table.songs th {
-    padding: 8px 12px;
-  }
-
-  table.songs tbody tr {
-    background-color: var(--color-aside-bg);
-    transition: 0.3s;
-  }
-
-  table.songs tbody tr:hover {
-    background-color: var(--color-aside-lighter);
-    color: var(--color-main-bg);
-  }
-
-  table.songs a {
-    display: block;
-    text-decoration: none;
-  }
-</style>
+  console.log("build")
+  // console.log("lyricskeeper");
+  console.log("/lyricskeeper");
+</script>
 
 </head>
 <body>
@@ -63,6 +80,11 @@
     <nav>
       <a href="/songs">Back to List</a>
     </nav>
+    <input placeholder="Search song" id="song-search">
+    <template id="song-search-result">
+      <div class="search-result">
+      </div>
+    </template>
   </header>
 
   <main class="songdir">
@@ -76,16 +98,14 @@
             <th>Part of</th>
           </tr>
         </thead>
-        <tbody>
-            <tr>
+        <tbody><tr>
               <td><a href="/songs/passerine/">Passerine</a></td>
               <td><a href="/songs/passerine/">
                 The Oh Hellos
               </a></td>
               <td><a href="/songs/passerine/"></a></td>
             </tr>
-          </li>
-            <tr>
+          </li><tr>
               <td><a href="/songs/hunters-song/">Hunter's Song</a></td>
               <td><a href="/songs/hunters-song/">
                 Adam Gubman
@@ -93,16 +113,14 @@
               <td><a href="/songs/hunters-song/">
                 <span>MSR</span></a></td>
             </tr>
-          </li>
-            <tr>
+          </li><tr>
               <td><a href="/songs/give-and-take/">Give and Take</a></td>
               <td><a href="/songs/give-and-take/">
                 Poor Man's Poison
               </a></td>
               <td><a href="/songs/give-and-take/"></a></td>
             </tr>
-          </li>
-            <tr>
+          </li><tr>
               <td><a href="/songs/operation-blade/">Operation Blade</a></td>
               <td><a href="/songs/operation-blade/">
                 Obadiah Brown-Beach & Xueran Chen
@@ -110,8 +128,7 @@
               <td><a href="/songs/operation-blade/">
                 <span>MSR</span></a></td>
             </tr>
-          </li>
-            <tr>
+          </li><tr>
               <td><a href="/songs/magic-theorem/">Magic Theorem</a></td>
               <td><a href="/songs/magic-theorem/">
                 Adam Gubman & Sarah Kang
@@ -119,16 +136,55 @@
               <td><a href="/songs/magic-theorem/">
                 <span>MSR</span></a></td>
             </tr>
-          </li>
-            <tr>
+          </li><tr>
               <td><a href="/songs/tombi/">Tombi</a></td>
               <td><a href="/songs/tombi/">
                 Kvi Baba
               </a></td>
               <td><a href="/songs/tombi/"></a></td>
             </tr>
+          </li><tr>
+              <td><a href="/songs/bluish-light/">Bluish Light</a></td>
+              <td><a href="/songs/bluish-light/">
+                Matthew Carl Earl & Xueran Chen
+              </a></td>
+              <td><a href="/songs/bluish-light/">
+                <span>MSR</span></a></td>
+            </tr>
+          </li><tr>
+              <td><a href="/songs/undertopia/">Undertopia</a></td>
+              <td><a href="/songs/undertopia/">
+                Adam Gubman & Moonlist
+              </a></td>
+              <td><a href="/songs/undertopia/">
+                <span>MSR</span></a></td>
+            </tr>
+          </li><tr>
+              <td><a href="/songs/ensheath/">Ensheath</a></td>
+              <td><a href="/songs/ensheath/">
+                David Lin & Robert Wolf & Obadiah Brown-Beach
+              </a></td>
+              <td><a href="/songs/ensheath/">
+                <span>MSR</span></a></td>
+            </tr>
+          </li><tr>
+              <td><a href="/songs/nevertoreturn/">Never to Return</a></td>
+              <td><a href="/songs/nevertoreturn/">
+                Darren Korb
+              </a></td>
+              <td><a href="/songs/nevertoreturn/"></a></td>
+            </tr>
+          </li><tr>
+              <td><a href="/songs/motherimhere/">Mother, I'm Here (Zulf's Theme)</a></td>
+              <td><a href="/songs/motherimhere/">
+                Darren Korb
+              </a></td>
+              <td><a href="/songs/motherimhere/"></a></td>
+            </tr>
           </li></tbody>
       </table>
   </main>
+
+  <script src="/search.js"></script>
 </body>
 </html>

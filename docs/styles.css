@@ -59,3 +59,68 @@ body > footer {
   white-space: pre-line;
   margin-bottom: 1.5em;
 }
+
+
+.songdir {
+    text-align: center;
+  }
+
+  table.songs {
+    max-width: 800px;
+    width: 90%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  table.songs th {
+    font-weight: 400;
+  }
+
+  table.songs td, table.songs th {
+    padding: 8px 12px;
+  }
+
+  table.songs tbody tr {
+    background-color: var(--color-aside-bg);
+    transition: 0.3s;
+  }
+
+  table.songs tbody tr:hover {
+    background-color: var(--color-aside-lighter);
+    color: var(--color-main-bg);
+  }
+
+  table.songs a {
+    display: block;
+    text-decoration: none;
+  }
+
+  #song-search {
+    padding: 4px 6px;
+    margin-left: auto;
+  }
+
+  .search-result {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: calc(1em + 22px);
+
+    padding-left: 0;
+    list-style: none; 
+    background-color: var(--color-aside-lighter);
+    color: var(--color-main-bg);
+  }
+
+  .search-result > * {
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .search-result > *:hover {
+    text-decoration: none;
+    color: white;
+  }

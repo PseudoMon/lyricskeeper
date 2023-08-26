@@ -8,54 +8,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="{% absPath eleventy.env.runMode %}/styles.css">
 
-<style>
-  .songdir {
-    text-align: center;
-  }
+<script>
+  var SONGS = [
+    {%- for song in collections.song -%}
+    { 
+      title: "{{ song.data.title }}",
+      artist: "{{ song.data.artist | join: " & "}}",
+      artists: [
+        {%- for artist in song.data.artist -%}
+        "{{ artist }}",
+        {%- endfor -%}
+      ],
+      url: "{{ song.url }}"
+    },
+    {%- endfor %}
+  ]
 
-  ol.songs {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  ol.songs li {
-    display: flex;
-  }
-
-  table.songs {
-    max-width: 800px;
-    width: 90%;
-    border-collapse: separate;
-    border-spacing: 0 8px;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  table.songs th {
-    font-weight: 400;
-  }
-
-  table.songs td, table.songs th {
-    padding: 8px 12px;
-  }
-
-  table.songs tbody tr {
-    background-color: var(--color-aside-bg);
-    transition: 0.3s;
-  }
-
-  table.songs tbody tr:hover {
-    background-color: var(--color-aside-lighter);
-    color: var(--color-main-bg);
-  }
-
-  table.songs a {
-    display: block;
-    text-decoration: none;
-  }
-</style>
+  console.log("{{ eleventy.env.runMode }}")
+  // console.log("{{ targetSubdir }}");
+  console.log("{% absPath "build" %}");
+</script>
 
 </head>
 <body>
@@ -63,6 +37,11 @@
     <nav>
       <a href="/songs">Back to List</a>
     </nav>
+    <input placeholder="Search song" id="song-search">
+    <template id="song-search-result">
+      <div class="search-result">
+      </div>
+    </template>
   </header>
 
   <main class="songdir">
@@ -78,7 +57,6 @@
         </thead>
         <tbody>
            {%- for song in collections.song -%}
-           {% if page.url == song.url %}{% continue %}{% endif %}
             <tr>
               <td><a href="{{ song.url }}">{{ song.data.title }}</a></td>
               <td><a href="{{ song.url }}">
@@ -96,5 +74,7 @@
         </tbody>
       </table>
   </main>
+
+  <script src="/search.js"></script>
 </body>
 </html>
