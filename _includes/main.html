@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PseudoMon's Lyrics Keeper</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% absPath eleventy.env.runMode %}/styles.css">
+
+<script>
+  var SONGS = [
+    {%- for song in collections.song -%}
+    { 
+      title: "{{ song.data.title }}",
+      artist: "{{ song.data.artist | join: " & "}}",
+      artists: [
+        {%- for artist in song.data.artist -%}
+        "{{ artist }}",
+        {%- endfor -%}
+      ],
+      url: "{% absPath eleventy.env.runMode %}{{ song.url }}"
+    },
+    {%- endfor %}
+  ]
+</script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="{% absPath eleventy.env.runMode %}/">About</a>
+      <a href="{% absPath eleventy.env.runMode %}/songs">Full Song Directory</a>
+    </nav>
+    <input placeholder="Search song" id="song-search">
+    <template id="song-search-result">
+      <div class="search-result">
+      </div>
+    </template>
+  </header>
+
+  {{ content }}
+
+  <script src="/search.js"></script>
+</body>
+</html>

@@ -36,6 +36,10 @@ body > footer {
   justify-content: center;
 }
 
+body > header nav > * {
+  margin-right: 20px;
+}
+
 .song {
   text-align: center;
   margin: 0 auto;
@@ -123,4 +127,9 @@ body > footer {
   .search-result > *:hover {
     text-decoration: none;
     color: white;
+  }
+
+  .frontpage {
+    max-width: 800px;
+    margin: 0 auto;
   }

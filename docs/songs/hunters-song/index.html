@@ -8,22 +8,89 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/lyricskeeper/styles.css">
 
+<script>
+  var SONGS = [{ 
+      title: "Passerine",
+      artist: "The Oh Hellos",
+      artists: ["The Oh Hellos",],
+      url: "/lyricskeeper/songs/passerine/"
+    },{ 
+      title: "Hunter's Song",
+      artist: "Adam Gubman",
+      artists: ["Adam Gubman",],
+      url: "/lyricskeeper/songs/hunters-song/"
+    },{ 
+      title: "Give and Take",
+      artist: "Poor Man's Poison",
+      artists: ["Poor Man's Poison",],
+      url: "/lyricskeeper/songs/give-and-take/"
+    },{ 
+      title: "Operation Blade",
+      artist: "Obadiah Brown-Beach & Xueran Chen",
+      artists: ["Obadiah Brown-Beach","Xueran Chen",],
+      url: "/lyricskeeper/songs/operation-blade/"
+    },{ 
+      title: "Magic Theorem",
+      artist: "Adam Gubman & Sarah Kang",
+      artists: ["Adam Gubman","Sarah Kang",],
+      url: "/lyricskeeper/songs/magic-theorem/"
+    },{ 
+      title: "Tombi",
+      artist: "Kvi Baba",
+      artists: ["Kvi Baba",],
+      url: "/lyricskeeper/songs/tombi/"
+    },{ 
+      title: "Bluish Light",
+      artist: "Matthew Carl Earl & Xueran Chen",
+      artists: ["Matthew Carl Earl","Xueran Chen",],
+      url: "/lyricskeeper/songs/bluish-light/"
+    },{ 
+      title: "Undertopia",
+      artist: "Adam Gubman & Moonlist",
+      artists: ["Adam Gubman","Moonlist",],
+      url: "/lyricskeeper/songs/undertopia/"
+    },{ 
+      title: "Ensheath",
+      artist: "David Lin & Robert Wolf & Obadiah Brown-Beach",
+      artists: ["David Lin","Robert Wolf","Obadiah Brown-Beach",],
+      url: "/lyricskeeper/songs/ensheath/"
+    },{ 
+      title: "Never to Return",
+      artist: "Darren Korb",
+      artists: ["Darren Korb",],
+      url: "/lyricskeeper/songs/nevertoreturn/"
+    },{ 
+      title: "Mother, I'm Here (Zulf's Theme)",
+      artist: "Darren Korb",
+      artists: ["Darren Korb",],
+      url: "/lyricskeeper/songs/motherimhere/"
+    },
+  ]
+</script>
 </head>
+
 <body>
   <header>
     <nav>
-      <a href="/songs">Back to List</a>
+      <a href="/lyricskeeper/">About</a>
+      <a href="/lyricskeeper/songs">Full Song Directory</a>
     </nav>
+    <input placeholder="Search song" id="song-search">
+    <template id="song-search-result">
+      <div class="search-result">
+      </div>
+    </template>
   </header>
 
-  <main>
-    <article class="song">
-      <h1>Hunter's Song</h1>
-      <h2>By Adam Gubman</h2>
+  
+<main>
+  <article class="song">
+    <h1>Hunter's Song</h1>
+    <h2>By Adam Gubman</h2>
 
-      <p class="lyrics"><p>Home
+    <p>Home
 left her homeland miles behind
 The hunter she walks
 on the seacoast way with her path before her
@@ -40,8 +107,11 @@ scared and afraid , I will wander
 I will remain , strong but it sets with the sun...
 Hopeless I'm chasing the dawn
 And I wander, wander on</p>
-</p>
-    </article>
-  </main>
+
+  </article>
+</main>
+
+
+  <script src="/search.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
     if (state == "build")
       return "/lyricskeeper"
     else
-      return "NNN"
+      return ""
   })
 
   return {
