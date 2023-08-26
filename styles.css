@@ -23,11 +23,12 @@ a {
 }
 
 body > header, body > footer {
-  min-height: 50px;
   display: flex;
   align-items: center;
   background-color: var(--color-aside-bg);
-  padding: 0 20px;
+  padding: 12px 20px;
+  flex-wrap: wrap;
+  row-gap: 12px;
 }
 
 body > footer {
@@ -45,6 +46,8 @@ main {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+input { font-size: 1em; }
 
 .frontpage {
   max-width: 800px;
@@ -121,7 +124,7 @@ table.songs a {
   display: block;
   position: absolute;
   right: 20px;
-  top: calc(1em + 22px);
+  top: 77px;
 
   padding-left: 0;
   list-style: none; 
