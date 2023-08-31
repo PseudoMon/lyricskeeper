@@ -9,9 +9,9 @@ body {
   background-color: var(--color-main-bg);
   color: var(--color-main);
 
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.125em;
-  line-height: 1.44;
+  line-height: 1.5;
   letter-spacing: 0em;
   font-weight: 300;
 

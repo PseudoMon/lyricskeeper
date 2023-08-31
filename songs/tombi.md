@@ -1,6 +1,7 @@
 ---
 title: Tombi
 artist: Kvi Baba
+tags: anime
 ---
 
 ちり紙のように散らばった涙
