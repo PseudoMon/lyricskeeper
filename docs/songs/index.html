@@ -10,104 +10,114 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/lyricskeeper/styles.css">
+  <link rel="stylesheet" href="/styles.css">
 
 <script>
   var SONGS = [{ 
       title: "Bluish Light",
       artist: "Matthew Carl Earl & Xueran Chen",
       artists: ["Matthew Carl Earl","Xueran Chen",],
-      url: "/lyricskeeper/songs/bluish-light/"
+      url: "/songs/bluish-light/"
     },{ 
       title: "Ensheath",
       artist: "David Lin & Robert Wolf & Obadiah Brown-Beach",
       artists: ["David Lin","Robert Wolf","Obadiah Brown-Beach",],
-      url: "/lyricskeeper/songs/ensheath/"
+      url: "/songs/ensheath/"
     },{ 
       title: "Eternal Flame",
       artist: "Obadiah Brown-Beach & Forts",
       artists: ["Obadiah Brown-Beach","Forts",],
-      url: "/lyricskeeper/songs/eternalflame/"
+      url: "/songs/eternalflame/"
     },{ 
       title: "Forty Days",
       artist: "Streetlight Manifesto",
       artists: ["Streetlight Manifesto",],
-      url: "/lyricskeeper/songs/fortydays/"
+      url: "/songs/fortydays/"
     },{ 
       title: "Give and Take",
       artist: "Poor Man's Poison",
       artists: ["Poor Man's Poison",],
-      url: "/lyricskeeper/songs/give-and-take/"
+      url: "/songs/give-and-take/"
     },{ 
       title: "Hunter's Song",
       artist: "Adam Gubman",
       artists: ["Adam Gubman",],
-      url: "/lyricskeeper/songs/hunters-song/"
+      url: "/songs/hunters-song/"
     },{ 
       title: "Magic Theorem",
       artist: "Adam Gubman & Sarah Kang",
       artists: ["Adam Gubman","Sarah Kang",],
-      url: "/lyricskeeper/songs/magic-theorem/"
+      url: "/songs/magic-theorem/"
     },{ 
       title: "Mortal Eye",
       artist: "Adam Gubman & BONZIE & Christine Hals",
       artists: ["Adam Gubman","BONZIE","Christine Hals",],
-      url: "/lyricskeeper/songs/mortaleye/"
+      url: "/songs/mortaleye/"
     },{ 
       title: "Mother, I'm Here (Zulf's Theme)",
       artist: "Darren Korb",
       artists: ["Darren Korb",],
-      url: "/lyricskeeper/songs/motherimhere/"
+      url: "/songs/motherimhere/"
     },{ 
       title: "Never to Return",
       artist: "Darren Korb",
       artists: ["Darren Korb",],
-      url: "/lyricskeeper/songs/nevertoreturn/"
+      url: "/songs/nevertoreturn/"
     },{ 
       title: "Operation Blade",
       artist: "Obadiah Brown-Beach & Xueran Chen",
       artists: ["Obadiah Brown-Beach","Xueran Chen",],
-      url: "/lyricskeeper/songs/operation-blade/"
+      url: "/songs/operation-blade/"
     },{ 
       title: "Passerine",
       artist: "The Oh Hellos",
       artists: ["The Oh Hellos",],
-      url: "/lyricskeeper/songs/passerine/"
+      url: "/songs/passerine/"
     },{ 
       title: "Settle Into Ash",
       artist: "Adam Gubman & Tyler Smith",
       artists: ["Adam Gubman","Tyler Smith",],
-      url: "/lyricskeeper/songs/settle-into-ash/"
+      url: "/songs/settle-into-ash/"
     },{ 
       title: "すずめ",
       artist: "RADWIMPS & 十明",
       artists: ["RADWIMPS","十明",],
-      url: "/lyricskeeper/songs/suzume/"
+      url: "/songs/suzume/"
     },{ 
       title: "The Hands That Thieve",
       artist: "Toh Kay",
       artists: ["Toh Kay",],
-      url: "/lyricskeeper/songs/thehandsthatthieve/"
+      url: "/songs/thehandsthatthieve/"
     },{ 
       title: "Tombi",
       artist: "Kvi Baba",
       artists: ["Kvi Baba",],
-      url: "/lyricskeeper/songs/tombi/"
+      url: "/songs/tombi/"
     },{ 
       title: "Undertopia",
       artist: "Adam Gubman & Moonlist",
       artists: ["Adam Gubman","Moonlist",],
-      url: "/lyricskeeper/songs/undertopia/"
+      url: "/songs/undertopia/"
     },{ 
       title: "ザムザ",
       artist: "てにをは",
       artists: ["てにをは",],
-      url: "/lyricskeeper/songs/zamuza/"
+      url: "/songs/zamuza/"
     },{ 
       title: "The Roar of the Spark",
       artist: "Daisuke Ishiwatari & NAOKI",
       artists: ["Daisuke Ishiwatari","NAOKI",],
-      url: "/lyricskeeper/songs/the-roar-of-the-spark/"
+      url: "/songs/the-roar-of-the-spark/"
+    },{ 
+      title: "Une vie à t'aimer",
+      artist: "Lorien Testard & Alice Duport-Percier & Victor Borba",
+      artists: ["Lorien Testard","Alice Duport-Percier","Victor Borba",],
+      url: "/songs/une-vie-a-taimer/"
+    },{ 
+      title: "VERSUSIA",
+      artist: "Tsutomu Narita & Maki Kawase & Tetsuya Fukuhara",
+      artists: ["Tsutomu Narita","Maki Kawase","Tetsuya Fukuhara",],
+      url: "/songs/versusia/"
     },
   ]
 </script>
@@ -116,8 +126,8 @@
 <body>
   <header>
     <nav>
-      <a href="/lyricskeeper/">About</a>
-      <a href="/lyricskeeper/songs">Full Song Directory</a>
+      <a href="/">About</a>
+      <a href="/songs">Full Song Directory</a>
     </nav>
     <input placeholder="Search song" id="song-search">
     <template id="song-search-result">
@@ -139,151 +149,165 @@
           </tr>
         </thead>
         <tbody><tr>
-              <td><a href="/lyricskeeper/songs/bluish-light/">Bluish Light</a></td>
-              <td><a href="/lyricskeeper/songs/bluish-light/">
+              <td><a href="/songs/bluish-light/">Bluish Light</a></td>
+              <td><a href="/songs/bluish-light/">
                 Matthew Carl Earl & Xueran Chen
               </a></td>
-              <td><a href="/lyricskeeper/songs/bluish-light/">
+              <td><a href="/songs/bluish-light/">
                 <span>MSR</span></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/ensheath/">Ensheath</a></td>
-              <td><a href="/lyricskeeper/songs/ensheath/">
+              <td><a href="/songs/ensheath/">Ensheath</a></td>
+              <td><a href="/songs/ensheath/">
                 David Lin & Robert Wolf & Obadiah Brown-Beach
               </a></td>
-              <td><a href="/lyricskeeper/songs/ensheath/">
+              <td><a href="/songs/ensheath/">
                 <span>MSR</span></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/eternalflame/">Eternal Flame</a></td>
-              <td><a href="/lyricskeeper/songs/eternalflame/">
+              <td><a href="/songs/eternalflame/">Eternal Flame</a></td>
+              <td><a href="/songs/eternalflame/">
                 Obadiah Brown-Beach & Forts
               </a></td>
-              <td><a href="/lyricskeeper/songs/eternalflame/">
+              <td><a href="/songs/eternalflame/">
                 <span>MSR</span></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/fortydays/">Forty Days</a></td>
-              <td><a href="/lyricskeeper/songs/fortydays/">
+              <td><a href="/songs/fortydays/">Forty Days</a></td>
+              <td><a href="/songs/fortydays/">
                 Streetlight Manifesto
               </a></td>
-              <td><a href="/lyricskeeper/songs/fortydays/"></a></td>
+              <td><a href="/songs/fortydays/"></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/give-and-take/">Give and Take</a></td>
-              <td><a href="/lyricskeeper/songs/give-and-take/">
+              <td><a href="/songs/give-and-take/">Give and Take</a></td>
+              <td><a href="/songs/give-and-take/">
                 Poor Man's Poison
               </a></td>
-              <td><a href="/lyricskeeper/songs/give-and-take/"></a></td>
+              <td><a href="/songs/give-and-take/"></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/hunters-song/">Hunter's Song</a></td>
-              <td><a href="/lyricskeeper/songs/hunters-song/">
+              <td><a href="/songs/hunters-song/">Hunter's Song</a></td>
+              <td><a href="/songs/hunters-song/">
                 Adam Gubman
               </a></td>
-              <td><a href="/lyricskeeper/songs/hunters-song/">
+              <td><a href="/songs/hunters-song/">
                 <span>MSR</span></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/magic-theorem/">Magic Theorem</a></td>
-              <td><a href="/lyricskeeper/songs/magic-theorem/">
+              <td><a href="/songs/magic-theorem/">Magic Theorem</a></td>
+              <td><a href="/songs/magic-theorem/">
                 Adam Gubman & Sarah Kang
               </a></td>
-              <td><a href="/lyricskeeper/songs/magic-theorem/">
+              <td><a href="/songs/magic-theorem/">
                 <span>MSR</span></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/mortaleye/">Mortal Eye</a></td>
-              <td><a href="/lyricskeeper/songs/mortaleye/">
+              <td><a href="/songs/mortaleye/">Mortal Eye</a></td>
+              <td><a href="/songs/mortaleye/">
                 Adam Gubman & BONZIE & Christine Hals
               </a></td>
-              <td><a href="/lyricskeeper/songs/mortaleye/"></a></td>
+              <td><a href="/songs/mortaleye/"></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/motherimhere/">Mother, I'm Here (Zulf's Theme)</a></td>
-              <td><a href="/lyricskeeper/songs/motherimhere/">
+              <td><a href="/songs/motherimhere/">Mother, I'm Here (Zulf's Theme)</a></td>
+              <td><a href="/songs/motherimhere/">
                 Darren Korb
               </a></td>
-              <td><a href="/lyricskeeper/songs/motherimhere/"></a></td>
+              <td><a href="/songs/motherimhere/"></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/nevertoreturn/">Never to Return</a></td>
-              <td><a href="/lyricskeeper/songs/nevertoreturn/">
+              <td><a href="/songs/nevertoreturn/">Never to Return</a></td>
+              <td><a href="/songs/nevertoreturn/">
                 Darren Korb
               </a></td>
-              <td><a href="/lyricskeeper/songs/nevertoreturn/"></a></td>
+              <td><a href="/songs/nevertoreturn/"></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/operation-blade/">Operation Blade</a></td>
-              <td><a href="/lyricskeeper/songs/operation-blade/">
+              <td><a href="/songs/operation-blade/">Operation Blade</a></td>
+              <td><a href="/songs/operation-blade/">
                 Obadiah Brown-Beach & Xueran Chen
               </a></td>
-              <td><a href="/lyricskeeper/songs/operation-blade/">
+              <td><a href="/songs/operation-blade/">
                 <span>MSR</span></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/passerine/">Passerine</a></td>
-              <td><a href="/lyricskeeper/songs/passerine/">
+              <td><a href="/songs/passerine/">Passerine</a></td>
+              <td><a href="/songs/passerine/">
                 The Oh Hellos
               </a></td>
-              <td><a href="/lyricskeeper/songs/passerine/"></a></td>
+              <td><a href="/songs/passerine/"></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/settle-into-ash/">Settle Into Ash</a></td>
-              <td><a href="/lyricskeeper/songs/settle-into-ash/">
+              <td><a href="/songs/settle-into-ash/">Settle Into Ash</a></td>
+              <td><a href="/songs/settle-into-ash/">
                 Adam Gubman & Tyler Smith
               </a></td>
-              <td><a href="/lyricskeeper/songs/settle-into-ash/">
+              <td><a href="/songs/settle-into-ash/">
                 <span>MSR</span></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/suzume/">すずめ</a></td>
-              <td><a href="/lyricskeeper/songs/suzume/">
+              <td><a href="/songs/suzume/">すずめ</a></td>
+              <td><a href="/songs/suzume/">
                 RADWIMPS & 十明
               </a></td>
-              <td><a href="/lyricskeeper/songs/suzume/"></a></td>
+              <td><a href="/songs/suzume/"></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/thehandsthatthieve/">The Hands That Thieve</a></td>
-              <td><a href="/lyricskeeper/songs/thehandsthatthieve/">
+              <td><a href="/songs/thehandsthatthieve/">The Hands That Thieve</a></td>
+              <td><a href="/songs/thehandsthatthieve/">
                 Toh Kay
               </a></td>
-              <td><a href="/lyricskeeper/songs/thehandsthatthieve/"></a></td>
+              <td><a href="/songs/thehandsthatthieve/"></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/tombi/">Tombi</a></td>
-              <td><a href="/lyricskeeper/songs/tombi/">
+              <td><a href="/songs/tombi/">Tombi</a></td>
+              <td><a href="/songs/tombi/">
                 Kvi Baba
               </a></td>
-              <td><a href="/lyricskeeper/songs/tombi/">
+              <td><a href="/songs/tombi/">
                 <span>anime</span></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/undertopia/">Undertopia</a></td>
-              <td><a href="/lyricskeeper/songs/undertopia/">
+              <td><a href="/songs/undertopia/">Undertopia</a></td>
+              <td><a href="/songs/undertopia/">
                 Adam Gubman & Moonlist
               </a></td>
-              <td><a href="/lyricskeeper/songs/undertopia/">
+              <td><a href="/songs/undertopia/">
                 <span>MSR</span></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/zamuza/">ザムザ</a></td>
-              <td><a href="/lyricskeeper/songs/zamuza/">
+              <td><a href="/songs/zamuza/">ザムザ</a></td>
+              <td><a href="/songs/zamuza/">
                 てにをは
               </a></td>
-              <td><a href="/lyricskeeper/songs/zamuza/"></a></td>
+              <td><a href="/songs/zamuza/"></a></td>
             </tr>
           </li><tr>
-              <td><a href="/lyricskeeper/songs/the-roar-of-the-spark/">The Roar of the Spark</a></td>
-              <td><a href="/lyricskeeper/songs/the-roar-of-the-spark/">
+              <td><a href="/songs/the-roar-of-the-spark/">The Roar of the Spark</a></td>
+              <td><a href="/songs/the-roar-of-the-spark/">
                 Daisuke Ishiwatari & NAOKI
               </a></td>
-              <td><a href="/lyricskeeper/songs/the-roar-of-the-spark/"></a></td>
+              <td><a href="/songs/the-roar-of-the-spark/"></a></td>
+            </tr>
+          </li><tr>
+              <td><a href="/songs/une-vie-a-taimer/">Une vie à t'aimer</a></td>
+              <td><a href="/songs/une-vie-a-taimer/">
+                Lorien Testard & Alice Duport-Percier & Victor Borba
+              </a></td>
+              <td><a href="/songs/une-vie-a-taimer/"></a></td>
+            </tr>
+          </li><tr>
+              <td><a href="/songs/versusia/">VERSUSIA</a></td>
+              <td><a href="/songs/versusia/">
+                Tsutomu Narita & Maki Kawase & Tetsuya Fukuhara
+              </a></td>
+              <td><a href="/songs/versusia/"></a></td>
             </tr>
           </li></tbody>
       </table>
   </main>
 
-  <script src="/lyricskeeper/search.js"></script>
+  <script src="/search.js"></script>
 </body>
 </html>
